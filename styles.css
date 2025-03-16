@@ -1,20 +1,15 @@
 body {
     margin: 0;
+    overflow: hidden;
+    background: #888; /* Grey background on the sides */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #888; /* Grey background */
-}
-
-.video-container {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 video {
-    max-width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
